@@ -8,6 +8,9 @@ io.on('connection', socket => {
   })
 })
 
-http.listen(4000, function() {
+const PORT = process.env.PORT || 5000
+
+http.listen(PORT, function() {
   console.log('listening on port 4000')
 })
+
